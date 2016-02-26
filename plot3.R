@@ -11,7 +11,7 @@ plot3 <- function()
   with(hpcfiltered,plot(Time,Sub_metering_1,type = "l",xlab="",ylab = "Energy sub mettering", col = "grey"))
   lines(hpcfiltered$Time,hpfcfiltered$Sub_metering_2,hpcfiltered$Sub_metering_2, col = "red", type = "l")
   lines(hpcfiltered$Time,hpfcfiltered$Sub_metering_3,hpcfiltered$Sub_metering_2, col = "blue", type = "l")
-  legend("topright", inset=.05,c("Sub_mettering_1","Sub_mettering_2","Sub_mettering_3"), fill = c("gray","red","blue"))
+  legend("topright",c("Sub_mettering_1","Sub_mettering_2","Sub_mettering_3"), col = c("gray","red","blue"), lwd = 1)
   dev.off()
 
 }
